@@ -8,7 +8,8 @@ It provides an overview of CPU, memory, disk usage, and identifies the most reso
 ---
 ## 🌐 Project URL
 
-https://github.com/opoyad/DevOpsLearning/server-stats
+https://github.com/opoyad/DevOpsLearning/server-stats.sh
+
 
 
 ---
