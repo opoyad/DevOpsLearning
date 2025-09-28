@@ -3,6 +3,8 @@
 # server-stats.sh
 # Basic server performance analysis script
 #
+# Project URL: https://github.com/opoyad/DevOpsLearning
+#
 
 echo "================= SERVER PERFORMANCE STATS ================="
 echo "Generated on: $(date)"
@@ -30,7 +32,12 @@ echo
 
 # CPU usage
 echo "CPU Usage:"
-mpstat 1 1 | awk '/Average/ && $12 ~ /[0-9.]+/ {print 100 - $12"% used ("$12"% idle)"}'
+if command -v mpstat &> /dev/null; then
+    mpstat 1 1 | awk '/Average/ && $12 ~ /[0-9.]+/ {print 100 - $12"% used ("$12"% idle)"}'
+else
+    # fallback if mpstat is not installed
+    top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8"% used ("$8"% idle)"}'
+fi
 echo
 
 # Memory usage
