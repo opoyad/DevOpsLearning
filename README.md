@@ -6,7 +6,12 @@ Personal Learning
 It provides an overview of CPU, memory, disk usage, and identifies the most resource-intensive processes.  
 
 ---
+## 🌐 Project URL
 
+https://github.com/opoyad/DevOpsLearning/server-stats
+
+
+---
 ## 📊 Features
 
 - **CPU Usage**  
