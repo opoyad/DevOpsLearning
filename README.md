@@ -1,46 +1,34 @@
-# DevOpsLearning
-Personal Learning 
 # Server Stats Script
 
-`server-stats.sh` is a lightweight Bash script to quickly analyze basic server performance statistics on any Linux system.  
-It provides an overview of CPU, memory, disk usage, and identifies the most resource-intensive processes.  
+This project provides a simple **Bash script** (`server-stats.sh`) that analyzes basic server performance statistics on any Linux server. It gives administrators a quick overview of CPU, memory, disk usage, and resource-hungry processes.  
 
----
-## 🌐 Project URL
-
-https://github.com/opoyad/DevOpsLearning
-
-
-
----
-## 📊 Features
-
-- **CPU Usage**  
-  Displays total CPU usage vs idle percentage.
-
-- **Memory Usage**  
-  Shows total, used, free, and usage percentage.
-
-- **Disk Usage**  
-  Summarizes total, used, available space, and percentage.
-
-- **Top Processes**  
-  - Top 5 processes by CPU usage  
-  - Top 5 processes by memory usage  
-
-- **System Info (Stretch Goal)**  
-  - OS version  
-  - Uptime and load average  
-  - Logged-in users  
-  - Recent failed login attempts (if `auth.log` or `secure` logs exist)  
+🔗 **Project URL**: [DevOpsLearning](https://github.com/opoyad/DevOpsLearning)
 
 ---
 
-## 🚀 Usage
+## Features
 
-### 1. Clone or copy the script
-Save the script as `server-stats.sh`.
+The script displays:
 
-### 2. Make the script executable
+- **Total CPU usage**
+- **Total memory usage** (Free vs Used with percentage)
+- **Total disk usage** (Free vs Used with percentage)
+- **Top 5 processes by CPU usage**
+- **Top 5 processes by memory usage**
+
+### Stretch Goals (Optional Add-ons)
+
+- OS version  
+- System uptime  
+- Load average  
+- Currently logged-in users  
+- Failed login attempts  
+
+---
+
+## Usage
+
+### 1. Clone the repository
 ```bash
-chmod +x server-stats.sh
+git clone https://github.com/opoyad/DevOpsLearning.git
+cd DevOpsLearning
